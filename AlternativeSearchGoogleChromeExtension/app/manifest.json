@@ -1,0 +1,47 @@
+﻿{
+  "manifest_version": 2,
+
+  "name": "Альтернативный поиск",
+  "description": "Это расширение добавляет на страницы поисковиков ссылки на страницы других поисковиков.",
+  "version": "0.1.0.4",
+
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  }, 
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/*",
+        "*://google.com/*",
+        "*://*.google.ru/*",
+        "*://google.ru/*",
+        "*://*.google.com.tr/*",
+        "*://google.com.tr/*",
+        "*://*.google.com.ua/*",
+        "*://google.com.ua/*",
+        "*://*.google.by/*",
+        "*://google.by/*",
+        "*://*.google.kz/*",
+        "*://google.kz/*"
+      ],
+      "js": [ "scripts/jquery-3.1.1.js", "scripts/background_for_google.js" ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.yandex.ru/*",
+        "*://*.yandex.com/*"
+      ],
+      "js": [ "scripts/jquery-3.1.1.js", "scripts/background_for_yandex.js" ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_title": "Альтернативный поиск",
+    "default_icon": "img/icon.png"
+    //"default_popup": "popup.html"
+  }
+}
