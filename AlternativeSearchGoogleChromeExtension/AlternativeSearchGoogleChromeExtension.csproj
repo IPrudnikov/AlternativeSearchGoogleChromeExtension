@@ -39,25 +39,87 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\img\icon.png" />
-    <Content Include="app\popup.html" />
-    <Content Include="app\popup.js" />
-    <Content Include="app\scripts\background_for_google.js" />
-    <Content Include="app\scripts\background_for_yandex.js" />
+    <Content Include="app\scripts\background.js" />
+    <Content Include="app\scripts\JsInterface.js" />
+    <Content Include="app\scripts\SearchEngines\backgroundCore.js" />
+    <Content Include="app\scripts\SearchEngines\background_for_localhost.js" />
+    <Content Include="app\scripts\SearchEngines\test.js" />
+    <Content Include="app\styles\background.css" />
+    <Content Include="app\styles\options.css" />
+    <Content Include="app\styles\popup.css" />
+    <Content Include="app\styles\SearchEngines\forGoogle.css" />
+    <Content Include="app\styles\SearchEngines\forYandex.css" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\img\tmp\1493388639.svg" />
+    <Content Include="app\img\SearchEngines\options\settings_button.svg" />
+    <Content Include="app\img\SearchEngines\options\angle-arrow-down.svg" />
+    <Content Include="app\img\tmp\magnifier-tool.svg" />
+    <Content Include="app\img\SearchEngines\options\google.svg" />
+    <Content Include="app\img\tmp\order.svg" />
+    <Content Include="app\img\tmp\settings.svg" />
+    <Content Include="app\img\icons\icon.png" />
+    <Content Include="app\img\SearchEngines\options\yandex.svg" />
+    <Content Include="app\pages\options.html" />
+    <Content Include="app\scripts\options.js" />
+    <Content Include="app\pages\popup.html" />
+    <Content Include="app\scripts\popup.js" />
+    <Content Include="app\popup_old.js" />
+    <Content Include="app\scripts\SearchEngines\background_for_google.js" />
+    <Content Include="app\scripts\SearchEngines\background_for_yandex.js" />
+    <Content Include="app\scripts\enjoyhint.min.js" />
     <Content Include="app\scripts\jquery-3.1.1.js" />
+    <Content Include="app\styles\jquery.enjoyhint.css" />
+    <Content Include="app\style_old.css" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />
     <Content Include="Properties\build\lib\MSBuild.ExtensionPack.dll" />
     <Content Include="screenshots\screenshot.png" />
     <Content Include="index.htm" />
     <Content Include="Properties\build\ligershark.chrome.targets" />
     <Content Include="screenshots\readme.txt" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\core.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\list.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\path.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="app\toolkits\font-awesome-4.7.0\scss\_variables.scss" />
     <None Include="scripts\_references.js" />
     <None Include="scripts\chrome-api-vsdoc.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\manifest.json" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\img\SearchEngines\pages\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -2,14 +2,14 @@
   "manifest_version": 2,
 
   "name": "Альтернативный поиск",
-  "description": "Это расширение добавляет на страницы поисковиков ссылки на страницы других поисковиков.",
-  "version": "0.1.0.4",
+  "description": "Удобное расширение для поиска запросов в разных поисковиках.",
+  "version": "0.1.0.10",
 
   "icons": {
-    "16": "img/icon.png",
-    "48": "img/icon.png",
-    "128": "img/icon.png"
-  }, 
+    "16": "img/icons/icon.png",
+    "48": "img/icons/icon.png",
+    "128": "img/icons/icon.png"
+  },
 
   "content_scripts": [
     {
@@ -27,7 +27,8 @@
         "*://*.google.kz/*",
         "*://google.kz/*"
       ],
-      "js": [ "scripts/jquery-3.1.1.js", "scripts/background_for_google.js" ],
+      "css": [ "styles/SearchEngines/forGoogle.css", "styles/jquery.enjoyhint.css" ],
+      "js": [ "scripts/jquery-3.1.1.js", "scripts/enjoyhint.min.js", "scripts/SearchEngines/background_for_google.js" ],
       "run_at": "document_start"
     },
     {
@@ -35,13 +36,33 @@
         "*://*.yandex.ru/*",
         "*://*.yandex.com/*"
       ],
-      "js": [ "scripts/jquery-3.1.1.js", "scripts/background_for_yandex.js" ],
+      "css": [ "styles/SearchEngines/forYandex.css" ],
+      "js": [ "scripts/SearchEngines/background_for_yandex.js" ],
       "run_at": "document_start"
     }
   ],
+  //"background_page": "background.html",
+  "background": {
+    "scripts": [
+      "scripts/jquery-3.1.1.js",
+      "scripts/background.js"
+    ]
+  },
+  //"options_page": "pages/options.html",
   "browser_action": {
     "default_title": "Альтернативный поиск",
-    "default_icon": "img/icon.png"
-    //"default_popup": "popup.html"
-  }
+    "default_icon": "img/icons/icon.png"
+    //"default_popup": "pages/popup.html"
+  },
+  "author": "IPrudnikov",
+  "offline_enabled": false,
+  "permissions": [
+    "activeTab",
+    "storage"
+    //"notifications"
+  ]//,
+  //"web_accessible_resources": [
+  //  "scripts/SearchEngines/test.js"
+
+  //]
 }

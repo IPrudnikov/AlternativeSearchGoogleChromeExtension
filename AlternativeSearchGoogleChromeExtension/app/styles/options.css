@@ -1,0 +1,46 @@
+﻿body {
+    margin: 0;
+    padding: 10px 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    min-height: 100%;
+}
+
+.header {
+    margin-top: 10px;
+    padding-left: 60px;
+    min-height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 23px;
+    background: left center url(../img/icons/icon.png) no-repeat;
+    background-size: contain;
+}
+
+.group {
+    margin-top: 14px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.group.checkbox input {
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+input, textarea, select {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.group.checkbox .title {
+    margin: 0 0 0 6px;
+}
+
+.group .title {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 6px;
+    white-space: normal;
+}

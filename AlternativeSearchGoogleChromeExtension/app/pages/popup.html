@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+      <script src="../scripts/jquery-3.1.1.js"></script>
+      <script src="../scripts/popup.js"></script>
+      <link href="../toolkits/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="../styles/popup.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="altswarch_form">
+        <div>
+            <!--<input type="text" id="altSearchField"/> <input type="button" id="altSearchField_btn"/>-->
+            <div class="box">
+                <div class="container-3">
+                    <input id="search" placeholder="Поиск..." autofocus/>
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+        <div id="btnSearchEngines" class="btnSearchEngines"><div class="SearchEnginesSelected"><img  src="../img/SearchEngines/options/google.svg" /></div></div>
+        <div id="cbSearchEngines" class="cbSearchEngines">
+            <div class="SearchEngineItem"><img src="../img/SearchEngines/options/yandex.svg"/><span>Yandex</span></div>
+            <!--<div class="SearchEngineItem"><img src="img/googleSearch.svg"/><span>Google</span></div>
+            <div class="SearchEngineItem"><img src="img/yandex.svg" /><span>Yandex</span></div>-->
+        </div>
+        <div class="altsearch-button__meta">
+            <div class="altsearch-button__settings" id="altSearch_settings"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+

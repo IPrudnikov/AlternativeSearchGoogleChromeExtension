@@ -1,0 +1,45 @@
+﻿/*body {
+}
+
+.fadebody {
+    background: #a6a5bd none repeat scroll 0 0;
+    display: none; 
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+}*/
+
+/*.web
+    
+    -button__text {
+    font: 16px/32px arial,sans-serif;
+    position: relative;
+    display: block;
+    width: 79px;
+    margin-right: 9px;
+    padding-left: 5px;
+    color: #000;
+    border: solid #ffdb4d;
+    border-width: 2px 0;
+    background-color: #ffdb4d;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.websearch-button__text:before {
+    position: absolute;
+    top: -6px;
+    right: -9px;
+    width: 0;
+    height: 0;
+    content: '';
+    -o-transform: rotate(360deg);
+    border-width: 22px 0 22px 11px;
+    border-style: solid;
+    border-color: rgba(255,219,76,0);
+    border-left-color: inherit;
+}*/
