@@ -3,7 +3,7 @@
 
   "name": "Альтернативный поиск",
   "description": "Удобное расширение для поиска запросов в разных поисковиках.",
-  "version": "0.1.0.10",
+  "version": "0.1.0.11",
 
   "icons": {
     "16": "img/icons/icon.png",
@@ -37,7 +37,7 @@
         "*://*.yandex.com/*"
       ],
       "css": [ "styles/SearchEngines/forYandex.css" ],
-      "js": [ "scripts/SearchEngines/background_for_yandex.js" ],
+      "js": [ "scripts/jquery-3.1.1.js", "scripts/SearchEngines/background_for_yandex.js" ],
       "run_at": "document_start"
     }
   ],

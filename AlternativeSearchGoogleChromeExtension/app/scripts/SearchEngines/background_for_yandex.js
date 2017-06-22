@@ -38,7 +38,7 @@ function addElem(){
             subdomain = 'images.';
 		
 		var searchString = $('span[class*="input__box"]').find('input[class="input__control"]').val();
-		var url = 'https://' + subdomain + 'google.ru/#newwindow=1&q=' + searchString;
+		var url = 'https://' + subdomain + 'google.ru/#newwindow=1&q=' + escape(searchString);
         var win = window.open(url, '_blank');
     }
     //searchInGoogleBtn.appendChild(button1);
