@@ -1,0 +1,15 @@
+﻿/*
+- проверить загрузку js-библиотек в порядке записи в manifest
+	- создать тестовый background_for_search
+	- jquery, JsInterface [, enjoyhint], backgroundCore, background_for_search
+- выделить общие части скрипта в backgroundCore
+- вынести разные в локальный background_for_search
+
+https://canonium.com/articles/briefly-about-building-a-chrome-extension
+https://tproger.ru/articles/make-chrome-app-in-5-min/  Google Analytics — просто укажите ваш ID.
+http://programmict.ru/delaem-rasshirenie-dlya-google-crome/
+https://habrahabr.ru/post/147111/ injected
+
+
+content_scripts -> только background_for_search в котором из ресурсов подключаем\подгружаем backgroundCore, а уже в нем из ресорсов подтягиваем все необходимое
+*/

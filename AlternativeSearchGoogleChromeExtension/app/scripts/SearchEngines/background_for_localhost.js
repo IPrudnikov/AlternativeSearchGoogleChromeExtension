@@ -13,9 +13,10 @@
 
 $.get(chrome.extension.getURL("scripts/SearchEngines/test.js"),
 	function (data) {
-	    alert(1);
+	    //alert(1);
 	}
 );
 //$(document).ready(function() {
 //    alert(1);
 //});
+

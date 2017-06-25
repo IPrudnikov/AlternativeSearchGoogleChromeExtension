@@ -28,7 +28,7 @@
         "*://google.kz/*"
       ],
       "css": [ "styles/SearchEngines/forGoogle.css", "styles/jquery.enjoyhint.css" ],
-      "js": [ "scripts/jquery-3.1.1.js", "scripts/enjoyhint.min.js", "scripts/SearchEngines/background_for_google.js" ],
+      "js": [ "scripts/jquery-3.1.1.js", "scripts/enjoyhint.min.js", "scripts/SearchEngines/background_for_localhost.js" ],
       "run_at": "document_start"
     },
     {
@@ -60,9 +60,9 @@
     "activeTab",
     "storage"
     //"notifications"
-  ]//,
-  //"web_accessible_resources": [
-  //  "scripts/SearchEngines/test.js"
+  ],
+  "web_accessible_resources": [
+    "scripts/SearchEngines/test.js"
 
-  //]
+  ]
 }
