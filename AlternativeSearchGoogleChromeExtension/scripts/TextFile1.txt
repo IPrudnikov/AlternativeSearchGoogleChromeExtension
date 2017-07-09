@@ -13,3 +13,5 @@ https://habrahabr.ru/post/147111/ injected
 
 content_scripts -> только background_for_search в котором из ресурсов подключаем\подгружаем backgroundCore, а уже в нем из ресорсов подтягиваем все необходимое
 */
+
+https://stackoverflow.com/questions/19717126/chrome-extension-referencing-calling-other-script-functions-from-a-content-scrip

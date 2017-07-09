@@ -59,8 +59,8 @@
   "offline_enabled": false,
   "permissions": [
     "activeTab",
-    "storage"
-    //"notifications"
+    "storage",
+    "notifications"
   ],
   "web_accessible_resources": [
     "scripts/SearchEngines/test.js"
