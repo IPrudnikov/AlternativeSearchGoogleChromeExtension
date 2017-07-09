@@ -111,6 +111,7 @@
     <Content Include="app\toolkits\font-awesome-4.7.0\scss\_screen-reader.scss" />
     <Content Include="app\toolkits\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="app\toolkits\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="scripts\TextFile1.txt" />
     <None Include="scripts\_references.js" />
     <None Include="scripts\chrome-api-vsdoc.js" />
   </ItemGroup>
