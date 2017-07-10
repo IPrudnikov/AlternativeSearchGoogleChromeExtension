@@ -1,4 +1,4 @@
-﻿//alert(2);
+﻿//alert(chrome.extension.getURL("scripts/SearchEngines/test.js"));
 
 function testLog() {
     console.log('test loaded succes');

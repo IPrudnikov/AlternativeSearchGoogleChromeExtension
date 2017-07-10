@@ -28,7 +28,9 @@
         "*://google.kz/*"
       ],
       "css": [ "styles/SearchEngines/forGoogle.css", "styles/jquery.enjoyhint.css" ],
-      "js": [ "scripts/jquery-3.1.1.js", "scripts/enjoyhint.min.js", "scripts/SearchEngines/background_for_localhost.js" ],
+      //"js": [ "scripts/jquery-3.1.1.js", "scripts/enjoyhint.min.js", "scripts/SearchEngines/test.js", "scripts/SearchEngines/background_for_localhost.js" ],
+      "js": [ "scripts/jquery-3.1.1.js", "scripts/JsInterface.js", "scripts/SearchEngines/backgroundCore.js", "scripts/SearchEngines/background_for_localhost.js" ],
+      //"run_at": "document_idle"
       "run_at": "document_start"
     },
     {
@@ -42,25 +44,25 @@
       "run_at": "document_start"
     }
   ],
-  //"background_page": "background.html",
+
   "background": {
     "scripts": [
       "scripts/jquery-3.1.1.js",
       "scripts/background.js"
     ]
   },
-  //"options_page": "pages/options.html",
+
   "browser_action": {
     "default_title": "Альтернативный поиск",
     "default_icon": "img/icons/icon.png"
-    //"default_popup": "pages/popup.html"
+
   },
   "author": "IPrudnikov",
   "offline_enabled": false,
   "permissions": [
     "activeTab",
-    "storage",
-    "notifications"
+    "storage"
+    //"notifications"
   ],
   "web_accessible_resources": [
     "scripts/SearchEngines/test.js"

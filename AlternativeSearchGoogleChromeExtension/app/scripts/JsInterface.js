@@ -30,9 +30,9 @@ Interface.ensureImplements = function (object) {
     }
 };
 
-function JsInterfaceLog() {
-    console.log('JsInterface loaded success');
-}
+//function JsInterfaceLog() {
+//    console.log('JsInterface loaded success');
+//}
 //example
 //function Map() { }
 //Map.prototype.centerOnPoint = function (x, y) { alert('center=> x: ' + x + ', y: ' + y) }
