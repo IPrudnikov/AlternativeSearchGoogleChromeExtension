@@ -56,6 +56,10 @@ SearchCore.prototype = {
     },
     clickFunction: function () {
         clickFunction();
+        this.privateFunc();
+    },
+    privateFunc: function() {
+        //alert(1);
     }
 };
 
@@ -71,9 +75,9 @@ function route(searchCoreInstance) {
 route(searchCoreObj);
 
 $(document).ready(function () {
+    searchCoreObj.privateFunc();
+    //setTimeout(searchCoreObj.clickFunction(), 100);
+    //setInterval(searchCoreObj.clickFunction(), 100);
 
-    setTimeout(searchCoreObj.clickFunction(), 100);
-    setInterval(searchCoreObj.clickFunction(), 100);
-    
 });
 
