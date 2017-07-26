@@ -37,7 +37,7 @@ function addElem(){
             subdomain = 'images.';
 		var searchString = $('input[class*="gsfi"]').val();
         
-		var url = 'http://' + subdomain + 'yandex.ru/yandsearch?text=' + escape(searchString);
+		var url = 'http://' + subdomain + 'yandex.ru/yandsearch?text=' + encodeURIComponent(searchString);
         var win = window.open(url, '_blank');
     }
 	$('button[class="sbico-c"]').after(searchInYandexBtn);
