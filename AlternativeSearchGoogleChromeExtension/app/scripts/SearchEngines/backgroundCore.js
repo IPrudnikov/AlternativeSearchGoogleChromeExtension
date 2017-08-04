@@ -66,13 +66,13 @@ SearchCore.prototype = {
 
 //после загрузки JsInterface
 var searchCoreObj = new SearchCore();
-var DynamicSearchCore = new Interface('DynamicSearchCore', ['firstRun', 'addElement', 'clickFunction']);
+//var DynamicSearchCore = new Interface('DynamicSearchCore', ['firstRun', 'addElement', 'clickFunction']);
 
-function route(searchCoreInstance) {
-    Interface.ensureImplements(searchCoreInstance, DynamicSearchCore);
-}
+//function route(searchCoreInstance) {
+//    Interface.ensureImplements(searchCoreInstance, DynamicSearchCore);
+//}
 
-route(searchCoreObj);
+//route(searchCoreObj);
 
 $(document).ready(function () {
     searchCoreObj.privateFunc();

@@ -74,6 +74,7 @@
     <Content Include="app\style_old.css" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />
     <Content Include="Properties\build\lib\MSBuild.ExtensionPack.dll" />
+    <Content Include="screenshots\screenshot_1.jpg" />
     <Content Include="screenshots\screenshot.png" />
     <Content Include="index.htm" />
     <Content Include="Properties\build\ligershark.chrome.targets" />
