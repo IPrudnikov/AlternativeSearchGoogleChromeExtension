@@ -11,7 +11,7 @@
     "48": "img/icons/icon.png"
   },
 
-  "content_scripts": [
+  "content_scripts": [ 
     {
       "matches": [
         "*://*.google.com/*",
